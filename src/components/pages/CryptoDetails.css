@@ -1,0 +1,72 @@
+.crypto-details-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  height: calc(100vh - 92px);
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.crypto-header .price {
+  font-size: 36px;
+  margin: 0;
+}
+
+.crypto-header .percent-change {
+  font-size: 16px;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.crypto-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.stat {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.timeframe-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.timeframe-buttons button {
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.timeframe-buttons button:hover {
+  background-color: #ddd;
+}
+
+.crypto-chart {
+  margin-top: 20px;
+  height: 340px;
+}

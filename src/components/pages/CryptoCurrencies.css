@@ -1,0 +1,89 @@
+.container-crypto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crypto-list {
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-header,
+.list-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-header-items,
+.list-body-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* border-bottom: 1px solid black; */
+  list-style-type: none;
+}
+
+.list-header-items {
+  font-weight: bold;
+}
+
+.list-body-items {
+  cursor: pointer;
+}
+
+.list-item {
+  flex: 1;
+  text-align: center;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 105px);
+}
+
+.spinner:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.spinner:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.spinner:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.spinner {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: 0 0.5rem;
+  animation: spinner 1s ease-in-out infinite;
+}
+
+@keyframes spinner {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

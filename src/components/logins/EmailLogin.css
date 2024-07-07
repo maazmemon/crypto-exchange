@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container2-loginpage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Styles */
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.container-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.container-input input {
+  flex: 1;
+  padding-right: 40px; /* Add padding to make space for the eye icon */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Text Styles */
+.account {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .container1-loginpage {
+    width: 90%;
+  }
+}
